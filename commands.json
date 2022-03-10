@@ -1,0 +1,42 @@
+{
+    "nsfw": [
+        {
+            "command": "/video &lt;title&gt;",
+            "description": "Plays a video from your uncle's porn library"
+        },
+        {
+            "command": "/fuck &lt;person&gt;",
+            "description": "same as last nite with your mom"
+        }
+    ],
+    "nsfw2": [
+        {
+            "command": "/video &lt;title&gt;",
+            "description": "Plays a video from your uncle's porn library"
+        },
+        {
+            "command": "/fuck &lt;person&gt;",
+            "description": "same as last nite with your mom"
+        }
+    ],
+    "nsfw3": [
+        {
+            "command": "/video &lt;title&gt;",
+            "description": "Plays a video from your uncle's porn library"
+        },
+        {
+            "command": "/fuck &lt;person&gt;",
+            "description": "same as last nite with your mom"
+        }
+    ],
+    "nsfw4": [
+        {
+            "command": "/video &lt;title&gt;",
+            "description": "Plays a video from your uncle's porn library"
+        },
+        {
+            "command": "/fuck &lt;person&gt;",
+            "description": "same as last nite with your mom"
+        }
+    ]
+}

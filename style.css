@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+
+/* inicio del rock */
+
+
+
+.navbar.navbar-expand-md.bg-discord.navbar-dark.justify-content-center {
+  bottom: 0;
+}
+
+.CommandList {
+  border: 1px solid black;
+  margin-top: 40px;
+}
+
+.CommandList .list-group-item {
+  background-color: #242529;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 5px 25px;
+  -webkit-transition: background-color 0.125 ease-in-out, color 0.125s ease-in-out;
+  -o-transition: background-color 0.125 ease-in-out, color 0.125s ease-in-out;
+  -moz-transition: background-color 0.125 ease-in-out, color 0.125s ease-in-out;
+  transition: background-color 0.125 ease-in-out, color 0.125s ease-in-out;
+}
+
+.CommandList .list-group-item:hover {
+  background-color: #28292e;
+
+}
+
+.CommandList .card-body {
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.CommandList .card {
+  margin-bottom: 0;
+  background-color: transparent !important;
+}
+
+.CommandList .card-title {
+  color: #DDDDDD;
+  margin: 0;
+  font-size: 20px;
+}
+
+.category-title {
+  padding: 10px 0;
+  color: white;
+  margin: 0;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.container-1.command-page {
+  padding-top: 71.42069px;
+}
+
+.container-1.command-page .btn-group-vertical>.btn, .btn-group>.btn {
+  max-height: 40px;
+}
+
+.container-1.command-page .btn-group-vertical {
+  justify-content: flex-start;
+  margin-top: 40px;
+}
+
+.btn-secondary.active-btn {
+  background-color: #5a6268 !important;
+  border-color: #545b62 !important;
+}
+
+.btn-secondary.focus, .btn-secondary:focus {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  box-shadow: none;
+}
+
+@media (max-width: 30em) {
+  .card-body {
+    flex-direction: column;
+    align-items: baseline !important;
+  }
+
+  .card-body h4 {
+    margin-bottom: .75rem !important;
+  }
+}
+
+
+
+
+
+/* fin del rock */
+
+#page1 {
+  justify-content: center !important;
+}
+
+.bg-discord {
+  background-color: #5865F2;
+}
+
+.bg-dark {
+  background-color: #343A40;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  max-width: 50px;
+  border: 1px solid white;
+}
+
+.navbar {
+  padding: 5px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  height: 71.42069px;
+  /* Nice */
+  transition: background-color .25s ease-in;
+}
+
+#header {
+  height: 100vh;
+  justify-content: center;
+}
+
+#page2 {
+  padding-top: 50px;
+}
+
+.navbar a {
+  border: none;
+}
+
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+}
+
+.container-1 {
+  margin-bottom: 50px;
+}
+
+.bg-grey {
+  background-color: #23272a;
+}
+
+.card {
+  border-width: 0px;
+  border-radius: 25px;
+  color: #ffffff;
+  margin-bottom: 20px
+}
+
+.brand-line {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 15px;
+  color: #ffffff;
+}
+
+.title-line {
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 25px;
+  color: #ffffff;
+  margin-left: 40px;
+}
+
+.card-img-top {
+  padding: 0px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.btn-discord {
+  color: #ffffff;
+  background-color: #5865F2;
+  border-color: #5865F2;
+}
+
+.btn-discord:hover {
+  color: #ffffff;
+  background-color: #7289DA;
+  border-color: #7289DA;
+}
+
+.big-text {
+  font-size: 36px;
+}
+
+.card-text {
+  font-size: 16px;
+}
+
+input {
+  margin: 25px;
+  border-color: #5865F2;
+  border-width: 5px;
+  color: #5865F2;
+}
+
+.form-control {
+  border-color: #5865F2;
+  border-width: 2px;
+  border-radius: 25px;
+  color: #5865F2;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.form-control:active {
+  border-color: #5865F2;
+  border-width: 3px;
+  border-radius: 25px;
+  color: #5865F2;
+}
+
+.list-group {
+  list-style: none;
+  background-color: #23272a;
+}
+
+.list-group-item {
+  list-style: none;
+  background-color: #343A40;
+  border-width: 0px;
+}
+
+.date {
+  font-size: 12px;
+}

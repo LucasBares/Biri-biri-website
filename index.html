@@ -1,498 +1,176 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Biri Biri Bot ~</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="shortcut icon" type="image/png" href="images/biri2.png"/>
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!doctype html>
+<html lang="en">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<img style="border-radius: 50%; width: 100%; height: auto;" src="images/biri2.png" alt="" />
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>Biri Biri Bot</h1>
-								<p>Bot for Offtopic and random Stuff / Bot para Offtopic y cosas random!
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#intro">Comandos / Commands</a></li>
-								<li><a href="https://github.com/LucasBares/Biri-Biri-Staging">Repositorio</a></li>
-								<li><a href="https://discord.com/oauth2/authorize?client_id=429093104474128394&scope=bot&permissions=8">Invitacion / Invite</a></li>
-								<li><a href="#contact">Agradecientos</a></li>
-							</ul>
-						</nav>
-					</header>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-				<!-- Main -->
-					<div id="main">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" media="screen">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Comandos / Commands</h2>
-								<span class="image main"><img src="images/commands.gif" alt="" /></span>
-								<h2>Español</h2>
-								<ul>
-									<li><a href="#admines">Comandos de Admin</a></li>
-									<li><a href="#musica">Musica</a></li>
-									<li><a href="#clima">Clima</a></li>
-									<li><a href="#nsfwes">NSFW</a></li>
-									<li><a href="#servinfoes">Informacion del Servidor/Usuario</a></li>
-									<li><a href="#offtopes">Comandos de Offtopic</a></li>
-								</ul>
-								<h2>English</h2>
-								<ul>
-										<li><a href="#admin">Admin Commands</a></li>
-										<li><a href="#music">Music</a></li>
-										<li><a href="#weather">Weather</a></li>
-										<li><a href="#nsfw">NSFW</a></li>
-										<li><a href="#servinfo">User/Server information</a></li>
-										<li><a href="#offtop">Offtopic Commands</a></li>
-									</ul>
-							</article>
+  <!-- Favicons -->
+  <!-- Change the favicon.png file to the image you wish to use as the favicon -->
+  <link rel="icon" type="image/png" href="asset/favicon.jpg" sizes="16x16">
+  <link rel="icon" type="image/png" href="asset/favicon.jpg" sizes="32x32">
+  <link rel="icon" type="image/png" href="asset/favicon.jpg" sizes="96x96">
+  <link rel="apple-touch-icon" sizes="72x72" href="asset/favicon.jpg">
+  <link rel="apple-touch-icon" sizes="114x114" href="asset/favicon.jpg">
+  <link rel="apple-touch-icon" sizes="152x152" href="asset/favicon.jpg">
+
+  <!-- Bootstrap JS | JQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+
+  <!-- SEO tools -->
+  <title>Biri Biri Bot</title>
+  <meta name="description" content="WEBSITE DESCRIPTION HERE!">
+  <meta name="keywords" content="WEBSITE KEYWORDS HERE!">
+  <!--Add additional SEO meta data here!-->
 
 
-							<!-- Muisica-->
-							<article id="musica">
-								<h2 class="major">Comandos de musica</h2>
-								<h6 class="major">Busqueda por URL</h6>
-								<code>n!play {url}</code><br>
-								<code>n!play https://www.youtube.com/watch?v=tWHBaJHo5og</code><br><br>
-								<h6 class="major">Busqueda por Nombre</h6>
-								<code>n!play {nombre}</code><br>
-								<code>n!play xo eden</code><br><br>
-								<h6 class="major">Saltea canciones en la queue</h6>
-								<code>n!skip</code><br><br>
-								<h6 class="major">Muestra la queue</h6>
-								<code>n!queue</code><br><br>
-								<h6 class="major">Limpia la lista de reproducción</h6>
-								<code>n!clearqueue</code><br><br>
-								<h6 class="major">Pausa la reproducción</h6>
-								<code>n!pause</code><br><br>
-								<h6 class="major">Renauda la reproducción</h6>
-								<code>n!resume</code><br><br>
-								<h6 class="major">Ajusta el volumen</h6>
-								<code>n!volume [1-200]</code><br><br>
-								<h6 class="major">Activa/Desactiva la reproducción en loop!</h6>
-								<code>n!loop</code><br><br>
-								<h6 class="major">Muestra el nombre de la cancion que se está reproduciendo actualmente</h6>
-								<code>n!np</code><br><br>
-								<h6 class="major">El bot deja el canal</h6>
-								<code>n!stop</code><br><br>
-							</article>
+</head>
 
-							<article id="music">
-								<h2 class="major">Music Commands</h2>
-								<h6 class="major">URL Search</h6>
-								<code>n!play {url}</code><br>
-								<code>n!play https://www.youtube.com/watch?v=tWHBaJHo5og</code><br><br>
-								<h6 class="major">Search By Name</h6>
-								<code>n!play {nombre}</code><br>
-								<code>n!play xo eden</code><br><br>
-								<h6 class="major">Skips songs on the queue</h6>
-								<code>n!skip</code><br><br>
-								<h6 class="major">Shows the queue</h6>
-								<code>n!queue</code><br><br>
-								<h6 class="major">Clears the queue</h6>
-								<code>n!clearqueue</code><br><br>
-								<h6 class="major">Pauses the queue</h6>
-								<code>n!pause</code><br><br>
-								<h6 class="major">Resumes the queue</h6>
-								<code>n!resume</code><br><br>
-								<h6 class="major">Sets the volume</h6>
-								<code>n!volume [1-200]</code><br><br>
-								<h6 class="major">Activate and deactivate the loop</h6>
-								<code>n!loop</code><br><br>
-								<h6 class="major">Shows the name of the song that is currently playing</h6>
-								<code>n!np</code><br><br>
-								<h6 class="major">Stops the queue</h6>
-								<code>n!stop</code><br><br>
-							</article>
+<body class="bg-dark is-preload">
 
-							<!-- Admin section-->
-							<article id="admines">
-								<h2 class="major">Comando de Admin</h2>
-									<h4 class= "major"> Activacion / Desactivacion de comandos por canal</h4>
-									<h5> Estados: Activar/Desactivar</h5>
-									<code>n!comando [comando] {estado} </code> <br> <br>
-									<span class="image main"><img src="images/gifs/activar.gif" alt="" /></span><br> <br>
-									<span class="image main"><img src="images/gifs/desactivar.gif" alt="" /></span><br> <br>
+  <nav id="navbar" class="navbar navbar-expand-md bg-discord navbar-dark">
+    <div class="container">
+      <!-- Bot/Brand Name -->
+      <div class="logo">
+        <img src="asset/favicon.jpg" alt="logo" />
+      </div>
+      <!-- Bootstrap Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-									<h4 class= "major"> Muteo por Canal</h4>
-									<h5> El bot borra los mensajes de la persona muteada durante 10 minutos en el canal (Esto no evita que la persona enviee mensajes, solo los borra)</h5> <br>
-									<code> n!mute @tag</code>
-							</article>
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <!-- This link invites Spectre, Change the client id to your bot's id -->
+          <li class="nav-item">
+            <a class="nav-link" target="_blank"
+              href="https://discord.com/oauth2/authorize?client_id=429093104474128394&scope=bot&permissions=8">Invite to
+              Server</a>
+          </li>
+          <!-- Change link to your support server link -->
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://discord.gg/pWUQ4XB8DK">Support Server</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="commands.html">Commands</a>
+          </li>
+          <!-- <li class="nav-item">
+                        <a class="nav-link" href="update-logs.html">Update Logs</a>
+                    </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-							<article id="admin">
-								<h2 class="major">Admin commands</h2>
-									<h4 class= "major"> Activate / Deactivate commands per channel</h4>
-									<h5> States: Activar/Desactivar</h5>
-									<code>n!comando [command] {state} </code> <br> <br>
-									<span class="image main"><img src="images/gifs/activar.gif" alt="" /></span><br> <br>
-									<span class="image main"><img src="images/gifs/desactivar.gif" alt="" /></span><br> <br>
+  <div id="page1" class="page">
 
-									<h4 class= "major"> Mute per Channel</h4>
-									<h5> The bot deletes the messages of the user muted for 10 minutes on the channel (This doesn't give a role of muted, only deletes the messages of the user on the channel)</h5> <br>
-									<code> n!mute @tag</code>
-							</article>
-							<!-- End of Admin Section -->
-
-							<!-- Weather section-->
-							<article id="clima">
-									<h2 class="major">Comando de Clima</h2>
-										<h4 class= "major"> Muestra el Clima de una Ciudad especifica</h4>
-										<h5> Nota: El comando no acepta ciudades con acentos en los nombres.</h5>
-										<code>n!clima {Ciudad} </code> <br> <br>
-										<span class="image main"><img src="images/clima.png" alt="" /></span><br>
-								</article>
-	
-								<article id="weather">
-									<h2 class="major">Weather command</h2>
-										<h4 class= "major"> Shows the Weather of the Requested City</h4>
-										<h5> Note: The command does not accept cities with accents in it.</h5>
-										<code>n!clima {city} </code> <br> <br>
-										<span class="image main"><img src="images/clima.png" alt="" /></span><br>
-								</article>
-								<!-- End of Weather Section -->
-
-							<!-- NSFW section-->
-							<article id="nsfwes">
-								<h2 class="major">Comandos NSFW (+18)</h2>
-									<h4 class= "major"> Comandos NSFW de Videos/Imagenes</h4>
-									<h5> Nota: El comando solo puede ser ejecutado en un canal marcado como NSFW</h5>
-									<h6 class = "major">Imagenes </h6>
-									<!-- Comandos -->
-									<code>n!eron</code><code>n!holoero</code> <code>n!patas</code><code>n!loli</code><br><br><code>n!pussygif</code><code>n!analart</code><code>n!lewdnekogif</code><code>n!pussyart</code><br><br><code>n!eroyuri</code><code>n!erokemo</code><code>n!blowjob</code><code>n!trap</code><code>n!tits</code><br><br><code>n!solo</code><code>n!solog</code><code>n!anal</code><code>n!kuni</code><code>n!random</code><br><br><code>n!lewdkemo</code><code>n!feet</code><code>n!ero</code><code>n!cumart</code><code>n!cum</code> <br><br><code>n!classic</code><code>n!pussy</code><code>n!futanari</code><code>n!boobs</code><code>n!keta</code> <br><br><code>n!bj</code><code>n!erok</code><code>n!hololewd</code><code>n!yuri</code><code>n!feetgif</code><br><br><code>n!lewdk</code><code>n!lewd</code><code>n!femdom</code><code>n!hentai</code><code>n!les </code> <br><br>
+    <header id="header">
+      <div class="content">
+        <div class="inner">
+          <h1>Biri Biri Bot</h1>
+          <p>Bot for Offtopic and random Stuff / Bot para Offtopic y cosas random!
+        </div>
+      </div>
+    </header>
+  </div>
 
 
-									<span class="image main"><img src="images/imagennsfw.png" alt="" /></span><br>
-									<!-- Videos -->
-									<h6 class="major">Videos</h6>
-									<h5> Nota: El comando solo puede ser ejecutado en un canal marcado como NSFW</h5><br>
-									<h5>La busqueda solamente puede ser hecha en pornhub.</h5>
-									<code>n!video {busqueda}</code> <br> <br>
-									<span class="image main"><img src="images/videonsfw.png" alt="" /></span><br>
-									
-									<!-- r34 -->
-									<h6 class="major">R34</h6>
-									<h5> Nota: El comando solo puede ser ejecutado en un canal marcado como NSFW</h5>
-									<h5>La busqueda solo se hace en rule34.xxx .</h5>
-									<code>n!r34 {search}</code> <br> <br>									
-							</article>
+  <div id="page2" class="container container-1">
+    <div class="row">
+      <h1 class="brand-line"><b>Spectre's Basic Bot Website!</b></h1>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+        <div class="card bg-grey" style="width:100%">
+          <div class="card-body">
+            <img class="card-img-top" src="asset/image1.png" alt="Bot Invite" style="width:100%">
+            <h4 class="card-title big-text">Invite Bot</h4>
+            <p class="card-text">Invite the greatest bot in the game and level up your server!</p>
+            <!-- This link invites Spectre, Change the client id to your bot's id -->
+            <a href="https://discord.com/oauth2/authorize?client_id=891665780050100235&permissions=8&scope=bot%20applications.commands"
+              class="btn btn-discord btn-block stretched-link">Invite Bot</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+        <div class="card bg-grey" style="width:100%">
+          <div class="card-body">
+            <img class="card-img-top" src="asset/image2.png" alt="Support Server" style="width:100%">
+            <h4 class="card-title big-text">Support Server</h4>
+            <p class="card-text">Join our support server for help setting up the bot and to report bugs...</p>
+            <!-- Change link to your support server link -->
+            <a href="https://discord.gg/pWUQ4XB8DK" class="btn btn-discord btn-block stretched-link">Join our Support
+              Server</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+        <div class="card bg-grey" style="width:100%">
+          <div class="card-body">
+            <img class="card-img-top" src="asset/image3.png" alt="Commands" style="width:100%">
+            <h4 class="card-title big-text">Bot Commands</h4>
+            <p class="card-text">View a full list of Commands for Spectre bot on our command list page!</p>
+            <a href="commands.html" class="btn btn-discord btn-block stretched-link">View Commands</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <h1 class="brand-line"><b>Featured News:</b></h1>
+    </div>
+    <!-- Update these with your bot's News -->
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="card bg-grey" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title big-text">Bot Updates</h4>
+            <p class="card-text">View the latest Update Logs here...</p>
+            <a href="updatelogs.html" class="btn btn-discord btn-block stretched-link">Update Logs</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="card bg-grey" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title big-text">View Snippets from Spectre on Autocode!</h4>
+            <p class="card-text">I have a couple of snippets available to help your bot - view them here!</p>
+            <a href="https://autocode.com/snippet/spectrebot/" class="btn btn-discord btn-block stretched-link">View
+              Snippets</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-							<article id="nsfw">
-									<h2 class="major">NSFW Commands (+18)</h2>
-									<h4 class= "major"> NSFW Commands for Videos/Images</h4>
-									<h5> Note: These commands only can be executed on a NSFW Channel</h5>
-									<h6 class = "major">Images</h6>
-									<!-- Comandos -->
-									<code>n!eron</code><code>n!holoero</code> <code>n!patas</code><code>n!loli</code><br><br><code>n!pussygif</code><code>n!analart</code><code>n!lewdnekogif</code><code>n!pussyart</code><br><br><code>n!eroyuri</code><code>n!erokemo</code><code>n!blowjob</code><code>n!trap</code><code>n!tits</code><br><br><code>n!solo</code><code>n!solog</code><code>n!anal</code><code>n!kuni</code><code>n!random</code><br><br><code>n!lewdkemo</code><code>n!feet</code><code>n!ero</code><code>n!cumart</code><code>n!cum</code> <br><br><code>n!classic</code><code>n!pussy</code><code>n!futanari</code><code>n!boobs</code><code>n!keta</code> <br><br><code>n!bj</code><code>n!erok</code><code>n!hololewd</code><code>n!yuri</code><code>n!feetgif</code><br><br><code>n!lewdk</code><code>n!lewd</code><code>n!femdom</code><code>n!hentai</code><code>n!les </code> <br><br>
+  <nav class="navbar navbar-expand-md bg-discord navbar-dark justify-content-center">
+    <div class="container">
+      <!-- Bot/Brand Name -->
+      <a class="navbar-brand" href="https://spectrebot.net"><b>&#169; 2021 | Spectre</b></a>
+    </div>
+  </nav>
 
-
-									<span class="image main"><img src="images/imagennsfw.png" alt="" /></span><br>
-									<!-- Videos -->
-									<h6 class="major">Videos</h6>
-									<h5> Note: This commands only can be executed on a NSFW Channel</h5><br>
-									<h5>The search only can be on pornhub.</h5>
-									<code>n!video {search}</code> <br> <br>
-									<span class="image main"><img src="images/videonsfw.png" alt="" /></span><br>
-
-									<!-- r34 -->
-									<h6 class="major">R34</h6>
-									<h5> Note: This commands only can be executed on a NSFW Channel</h5><br>
-									<h5>The search only can be on rule34.xxx .</h5>
-									<code>n!r34 {search}</code> <br> <br>
-							</article>
-							<!-- End of Weather Section -->
-
-							<!-- Userinfo section-->
-							<article id="servinfoes">
-									<h3 class="major">Informacion del Servidor/Usuario</h3>
-										<h4 class= "major"> Muestra la informacion del Servidor / Usuario</h4>
-										<h6 class = "major">Informacion del Servidor</h6>
-										<code>n!serverinfo</code> <br> <br>
-										<span class="image main"><img src="images/serverinfo.png" alt="" /></span><br> <br>
-										<br> <br>
-										<h6 class = "major">Informacion del Usuario</h6>
-										<p> Para ver la informacion de uno mismo</p><br>
-										<code> n!userinfo</code><br> <br>
-										<p> Para ver la informacion de otro usuario del servidor</p><br>
-										<code> n!userinfo @tag</code> <br>
-
-										<span class="image main"><img src="images/userinfo.png" alt="" /></span><br> <br>
-								</article>
-	
-								<article id="servinfo">
-										<h3 class="major">Information about the User / Guild</h3>
-										<h4 class= "major"> Shows the info about the User / Guild</h4>
-										<h6 class = "major">Information about the Guild</h6>
-										<code>n!serverinfo</code> <br> <br>
-										<span class="image main"><img src="images/serverinfo.png" alt="" /></span><br> <br>
-										<br> <br>
-										<h6 class = "major">Information about the User</h6>
-										<p> To see the info about you</p><br>
-										<code> n!userinfo</code><br> <br>
-										<p> To see the info about another user in the guild</p><br>
-										<code> n!userinfo @tag</code> <br>
-
-										<span class="image main"><img src="images/userinfo.png" alt="" /></span><br> <br>
-								</article>
-								<!-- Userinfo Section -->
-
-
-								<!-- Emotions section-->
-								<!-- Espaol-->
-								<article id="offtopes">
-								<nav>
-									<ul>
-										<h2 class="major">Navegación</h4>
-										<li><a href="#reacciones">Reacciones</a></li>
-										<li><a href="#calculadoramor">Calculador de Amor</a></li>
-										<li><a href="#ratees">Rate</a></li>
-										<li><a href="#avatares">Avatar</a></li>
-										<li><a href="#dados">Dados</a></li>
-										<li><a href="#moneda">Cara o Cruz</a></li>
-										<li><a href="#pajaro">Imagenes de Pajaritos</a></li>
-										<li><a href="#perro">Imagenes de Perros</a></li>
-									</ul>
-								</nav>
-								<div id="reacciones">
-									<h2 class="major">Reacciones</h2>
-										<h4 class= "major"> Hace acciones/emociones dependiendo el comando</h4>
-										<h5> Nota: La respuesta del bot tiene embeds, recuerda que deben estar activados.</h5>
-										<h6 class= "major"> Comandos sin menciones</h6>
-										<code>n!dab</code>
-										<code>n!wag</code>
-										<code>n!bailar</code>
-										<code>n!suicide</code>
-										<code>n!awoo</code>
-										<code>n!actitud</code> <br> <br>
-										
-										<h6 class= "major"> Comandos con menciones</h6>
-										<br>
-										<h6> n!comando @mencion</h6>
-										<code>n!pat</code>
-										<code>n!kiss</code>
-										<code>n!slap</code>
-										<code>n!hug</code>
-										<code>n!poke</code>
-										<code>n!feed</code>
-										<code>n!meaw</code>
-										<code>n!cuddle</code>
-										<code>n!tickle</code>
-										<code>n!lizzard</code>
-										<code>n!foxgirl</code>
-										<code>n!nekogif</code>
-										<code>n!kemono</code>
-										<code>n!holo</code>
-										<code>n!culear</code>
-										<code>n!putear</code>
-										<code>n!cepillar</code>
-										<code>n!morder</code>
-										<code>n!wachar</code>
-										<code>n!buitear</code>
-										<code>n!apresiar</code>
-										<code>n!secuestrar </code>
-
-										<span class="image main"><img src="https://i.imgur.com/xddWYfi.png" alt="" /></span><br>
-									</div>
-								<div id="calculadoramor">
-									<h2 class="major">Calculador de Amor</h2>
-									<h5> Para que funcione el comando debemos mencionar a dos personas</h5>
-									<code> n!lovecalc @persona1 @persona2</code>
-									<span class="image main"><img src="images/lovecalc.png" alt=""></span>
-								</div>
-
-								<div id="ratees">
-										<h2 class="major">Rate</h2>
-										<code> n!rate [palabra]</code>
-										<span class="image main"><img src="images/rate.png" alt=""></span>
-								</div>
-									
-								<div id="avatares">
-										<h2 class="major">Avatar</h2>
-										<code> n!avatar</code> <br>
-
-										<span class="image main"><img src="images/avatar.png" alt=""></span><br><br>
-
-										<code> n!avatar @persona</code><br>
-										<span class="image main"><img src="images/avatarotro.png" alt=""></span>
-								</div>
-
-								<div id="dados">
-									<h2 class="major">Dados</h2>
-									<code> n!roll</code>
-									<span class="image main"><img src="images/dice.png" alt=""></span>
-								</div>
-
-								<div id="moneda">
-										<h2 class="major">Cara o Cruz</h2>
-										<code> n!flip</code>
-										<span class="image main"><img src="images/moneda.png" alt=""></span>
-									</div>
-									
-								<div id="pajaro">
-										<h2 class="major">Pajaritos</h2>
-										<code> n!birb</code>
-										<span class="image main"><img src="images/birb.png" alt=""></span>
-								</div>
-
-								<div id="perro">
-										<h2 class="major">Perros!</h2>
-										<code> n!dog</code>
-										<span class="image main"><img src="images/dog.png" alt=""></span>
-								</div>
-								</article>
-
-								<!-- Ingles-->
-								<article id="offtop">
-								<nav>
-									<ul>
-										<h2 class="major">Navigation</h4>
-										<li><a href="#reacctions">Reactions</a></li>
-										<li><a href="#lovecalc">Calculator of Love</a></li>
-										<li><a href="#rate">Rate</a></li>
-										<li><a href="#avatar">Avatar</a></li>
-										<li><a href="#dice">Dice</a></li>
-										<li><a href="#coinflip">Heads or tails</a></li>
-										<li><a href="#birb">Birbs Images</a></li>
-										<li><a href="#dog">Dog Images</a></li>
-									</ul>
-								</nav>
-									<div id="reacctions">
-									<h2 class="major">Reactions</h2>
-										<h4 class= "major"> The bot says/do actions</h4>
-										<h5> Note: The response of the bot, is with an embed message, check the bot has permission to send messages embeds.</h5>
-										<h6 class= "major"> Commands without mentions</h6>
-										<code>n!dab</code>
-										<code>n!wag</code>
-										<code>n!bailar</code>
-										<code>n!suicide</code>
-										<code>n!awoo</code>
-										<code>n!actitud</code> <br> <br>
-										
-										<h6 class= "major"> Commands with mentions.</h6>
-										<br>
-										<h6> n!comando @mention</h6>
-										<code>n!pat</code>
-										<code>n!kiss</code>
-										<code>n!slap</code>
-										<code>n!hug</code>
-										<code>n!poke</code>
-										<code>n!feed</code>
-										<code>n!meaw</code>
-										<code>n!cuddle</code>
-										<code>n!tickle</code>
-										<code>n!lizzard</code>
-										<code>n!foxgirl</code>
-										<code>n!nekogif</code>
-										<code>n!kemono</code>
-										<code>n!holo</code>
-										<code>n!culear</code>
-										<code>n!putear</code>
-										<code>n!cepillar</code>
-										<code>n!bite</code>
-										<code>n!look</code>
-										<code>n!buitear</code>
-										<code>n!praise</code>
-										<code>n!kidnap</code>
-
-										<span class="image main"><img src="https://i.imgur.com/xddWYfi.png" alt="" /></span><br>
-									</div>
-									<div id="lovecalc">
-										<h2 class="major">Calculator of Love</h2>
-										<code> n!lovecalc @persona1 @persona2</code>
-										<span class="image main"><img src="images/lovecalc.png" alt=""></span>
-									</div>
-			
-									<div id="rate">
-										<h2 class="major">Rate</h2>
-										<code> n!rate [word]</code>
-										<span class="image main"><img src="images/rate.png" alt=""></span>
-									</div>
-												
-									<div id="avatar">
-										<h2 class="major">Avatar</h2>
-										<code> n!avatar</code> <br>
-			
-										<span class="image main"><img src="images/avatar.png" alt=""></span><br><br>
-			
-										<code> n!avatar @person</code><br>
-										<span class="image main"><img src="images/avatarotro.png" alt=""></span>
-									</div>
-			
-									<div id="dice">
-										<h2 class="major">Dice</h2>
-										<code> n!roll</code>
-										<span class="image main"><img src="images/dice.png" alt=""></span>
-									</div>
-			
-									<div id="coinflip">
-										<h2 class="major">Heads or tails</h2>
-										<code> n!flip</code>
-										<span class="image main"><img src="images/moneda.png" alt=""></span>
-								    </div>
-												
-									<div id="birb">
-													<h2 class="major">Cute Birbs</h2>
-													<code> n!birb</code>
-													<span class="image main"><img src="images/birb.png" alt=""></span>
-									</div>
-			
-									<div id="dog">
-													<h2 class="major">Cute Dogs!</h2>
-													<code> n!dog</code>
-													<span class="image main"><img src="images/dog.png" alt=""></span>
-									</div>
-								</article>
-								<!-- End of Emotions Section -->
-
-							<article id="contact">
-								<h2 class="major">Agradecimientos</h1>
-									<code>razpeitia#5174</code><br>
-									<code>Cehhiro#1337</code><br>
-									<code>Y cualquiera que haya aportado al bot via discord!</code><br>
-									<code>! LittleLolita🌸#0329 - foto de perfil del bot</code><br><br>
-								<h2 class="major">Soporte / Support</h2>
-									Si tienes algún error puedes comunicarte conmigo via Discord o las redes sociales debajo.<br>
-									<p>Taeko#0001</p>
-									If you have any problem, you can communicate with me via Discord or the Social Media below.<br>
-									<p>Taeko#0001</p>
-								</form>
-								<ul class="icons">
-									<li><a href="https://twitter.com/LucasUrielBares" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="https://github.com/LucasBares" class="icon fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</article>
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; Desarollado por : Taeko#0001 & Rare Akuma ☆#6776 / Developed by: Taeko#0001 & Rare Akuma ☆#6776</p>
-						<p class="copyright">&copy; Foto de perfil del bot comisionada por <a class="copyright" href="https://www.instagram.com/overdrive.girl/">Overdrive.girl</a></p> 
-					</footer>
-
-			</div>
-
-		<!-- BG -->
-			<div id="bg"></div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
 </html>

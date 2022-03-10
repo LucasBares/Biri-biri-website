@@ -8,9 +8,10 @@
 
 	var	$window = $(window),
 		$body = $('body'),
-		$wrapper = $('#wrapper'),
+		$wrapper = $('#page1'),
 		$header = $('#header'),
 		$footer = $('#footer'),
+		$navbar = $('#navbar'),
 		$main = $('#main'),
 		$main_articles = $main.children('article');
 
@@ -23,6 +24,96 @@
 			xsmall:   [ '361px',   '480px'  ],
 			xxsmall:  [ null,      '360px'  ]
 		});
+		$(document).ready(function(){       
+            var scroll_pos = 0;
+			$navbar.css('background-color', 'transparent');
+			resizeDiv();
+
+            $(document).scroll(function() { 
+                scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 50) {
+                    $navbar.css('background-color', '#5865F2');
+                } else {
+                    $navbar.css('background-color', 'transparent');
+                }
+            });
+        });
+
+		var pages = 2;
+		var currentpage = 1;
+		if (document.location.hash) { currentpage = parseInt(document.location.hash.replace('#', '')); }
+		
+		console.log(currentpage);
+		
+		var nextpage = currentpage + 1; if (nextpage > pages) { nextpage = pages; }
+		var prevpage = currentpage - 1; if (prevpage < 1) { prevpage = 1; }
+			
+		var animatingup = false;
+		var animatingdown = false;
+			
+		$(document).ready(function() {
+			//scrolltocurrent();
+		});
+		
+		window.onresize = function(event) {
+			resizeDiv();
+			scrolltocurrent();
+		}
+		
+		$(window).scroll(function(event) {
+			
+			if (animatingup==true) { console.log("animating up..."); return; }
+			if (animatingdown==true) { console.log("animating down..."); return; }
+			
+			nextpage = currentpage + 1; if (nextpage > pages) { nextpage = pages; }
+			prevpage = currentpage - 1; if (prevpage < 1) { prevpage = 1; }
+				
+			console.log("scroll happened, previous page is " + prevpage + ", current page is " + currentpage + ", next page is " + nextpage);
+		
+			//console.log($("#page"+(currentpage)).offset().top + " < " + $(window).scrollTop());
+			
+			//console.log($(window).scrollTop()+$(window).height() + " < " + $("#page"+(nextpage)).offset().top);
+			
+			if (animatingup == false) {
+				if ($(window).scrollTop()+$(window).height()>=$("#page"+(nextpage)).offset().top+50) {
+					if (nextpage > currentpage) {
+						var p2 = $( "#page"+(nextpage) );
+						var pageheight = p2.position().top;
+						animatingdown = true;
+						$('html, body').animate({ scrollTop: pageheight }, 500, function() { currentpage = nextpage; animatingdown = false; document.location.hash = currentpage;});
+						return;
+					}
+				}
+			}
+			
+			if (animatingdown == false) {
+				if ($(window).scrollTop()<=$("#page"+(currentpage)).offset().top-50) {
+					if (prevpage < currentpage) {
+						var p2 = $( "#page"+(currentpage) );
+						var pageheight = p2.position().top-$(window).height();
+						animatingup = true;
+						$('html, body').animate({ scrollTop: pageheight }, 500, function() { currentpage = prevpage; animatingup = false; document.location.hash = currentpage;});
+						return;
+					}
+				}
+			}
+		});
+		 
+		
+		function scrolltocurrent() {
+			var p2 = $( "#page"+(currentpage) );
+			var pageheight = p2.position().top;
+			$('html, body').animate({ scrollTop: pageheight }, 200);
+		}
+		
+		function resizeDiv() {
+			vpw = $(window).width();
+			vph = $(window).height();
+			$('.page').css({'min-height': vph + 'px'});
+		}
+		
+
+
 
 	// Play initial animations on page load.
 		$window.on('load', function() {
