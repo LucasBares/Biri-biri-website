@@ -106,8 +106,7 @@
         const Title = ({ title }) => `<h3 class="category-title">${title}</h3>`
         const Button = ({ text, id }) => `<button id="${id}" type="button" class="btn btn-secondary">${text}</button>`
 
-
-        var state = { active: [] };
+        var state = { active: null };
         (function ($) {
             $.fn.hasScrollBar = function () {
                 return this.get(0).scrollHeight > this.height();
@@ -131,13 +130,13 @@
                         const keys = Object.keys(json);
 
                         const filterVisibleCommands = () => {
-                            if (!state.active.length) {
+                            if (!state.active) {
                                 keys.forEach((key, index) => {
                                     document.getElementById(`CommandList${index}`).style.display = "block";
                                 })
                             } else {
                                 keys.forEach((key, index) => {
-                                    document.getElementById(`CommandList${index}`).style.display = state.active.includes(key) ? "block" : "none";
+                                    document.getElementById(`CommandList${index}`).style.display = state.active === key ? "block" : "none";
                                 })
                             }
                             $(".navbar.navbar-expand-md.bg-discord.navbar-dark.justify-content-center").css({ position: $("body").hasScrollBar() ? "relative" : "fixed" })
@@ -159,12 +158,16 @@
                         keys.forEach((key, index) => {
                             const button = document.getElementById(key);
                             button.addEventListener('click', () => {
-                                if (state.active.includes(key)) {
-                                    state.active = state.active.filter(elem => elem !== key)
+                                if (state.active === key) {
+                                    state.active = null;
                                     button.classList.remove("active-btn");
                                 } else {
+                                    keys.forEach((key, index) => {
+                                        const button = document.getElementById(key);
+                                        button.classList.remove("active-btn");
+                                    });
                                     button.classList.add("active-btn");
-                                    state.active.push(key)
+                                    state.active = key;
                                 }
                                 filterVisibleCommands()
                             })
@@ -178,7 +181,7 @@
     <nav class="navbar navbar-expand-md bg-discord navbar-dark justify-content-center">
         <div class="container">
             <!-- Bot/Brand Name -->
-            <a class="navbar-brand" href="https://spectrebot.net"><b>&#169; 2021 | Spectre</b></a>
+            <a class="navbar-brand" href="https://spectrebot.net"><b>&#169; 2021 | Biri Biri Bot</b></a>
         </div>
     </nav>
 
