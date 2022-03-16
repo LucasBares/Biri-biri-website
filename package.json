@@ -1,5 +1,5 @@
 {
-  "name": "Biri-biri-website-dev",
+  "name": "biri-biri-website",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/LucasBares/Biri-biri-website-dev/issues"
   },
-  "homepage": "https://github.com/LucasBares/Biri-biri-website-dev#readme",
+  "homepage": "https://biribiri.xyz/",
   "dependencies": {
     "serve": "^13.0.2"
   }
