@@ -1,42 +1,366 @@
 {
-    "nsfw": [
+    "Utilidad": [
         {
-            "command": "/video &lt;title&gt;",
-            "description": "Plays a video from your uncle's porn library"
+            "command": "n!clima <i> [ciudad] </i>",
+            "description": "Añade el nombre de una ciudad para conocer su clima, temperatura, humedad, presion, viento"
         },
         {
-            "command": "/fuck &lt;person&gt;",
-            "description": "same as last nite with your mom"
+            "command": "n!serverinfo",
+            "description": "Obtiene informacion del servidor"
+        },
+        {
+            "command": "n!userinfo <i> [usuario] </i>",
+            "description": "Obtiene informacion del usuario"
+        },
+        {
+            "command": "n!help",
+            "description": "Aqui podras ver los comandos del bot"
+        },
+        {
+            "command": "n!avatar <i> {usuario} </i>",
+            "description": "Usa el comando para ver tu avatar o menciona a un usuario para ver el suyo "
         }
     ],
-    "nsfw2": [
+    "Memes": [
         {
-            "command": "/video &lt;title&gt;",
-            "description": "Plays a video from your uncle's porn library"
+            "command": "n!ascii <i> [palabra] </i>",
+            "description": "Escribe una palabra o frase para dibujar en ascii"
         },
         {
-            "command": "/fuck &lt;person&gt;",
-            "description": "same as last nite with your mom"
+            "command": "n!choose <i> [item1|item2] </i>",
+            "description": "Agrege dos o más opciones para que el bot elija "
+        },
+        {
+            "command": "n!gif <i> [busqueda] </i>",
+            "description": "Envia un gif random en base a lo que escribas junto al comando "
+        },
+        {
+            "command": "n!meme <i> [usuario] </i> <i> [texto arriba | texto abajo] </i>",
+            "description": "crea un meme con la foto de perfil del mencionado en base al texto"
+        },
+        {
+            "command": "n!lovecalc <i> [usuario1] </i> <i> [usuario2] </i>",
+            "description": "Menciona a dos usuarios para calcular el amor entre ellos "
+        },
+        {
+            "command": "n!rate <i> [texto] </i>",
+            "description": "Agrega una palabra para puntuarla "
+        },
+        {
+            "command": "n!birb <i> [usuario] </i>",
+            "description": "Menciona a un usuario para pajarearle "
+        },
+        {
+            "command": "n!dog",
+            "description": "Envia un perro al chat"
+        },
+        {
+            "command": "n!roll <i>  {cantidad de caras} </i>",
+            "description": "Por defecto tira un dado de 6 caras, agrega un numero al comando para elegir el numero de caras"
+        },
+        {
+            "command": "n!flip",
+            "description": "Lanza una moneda"
         }
     ],
-    "nsfw3": [
+    "Emociones": [
         {
-            "command": "/video &lt;title&gt;",
-            "description": "Plays a video from your uncle's porn library"
+            "command": "n!dab",
+            "description": "Tira un dab "
         },
         {
-            "command": "/fuck &lt;person&gt;",
-            "description": "same as last nite with your mom"
+            "command": "n!lavarmanos",
+            "description": "Envia un gif para lavarte las manos despues de tocar usuarios de discord "
+        },
+        {
+            "command": "n!wag",
+            "description": "Envia un gif moviendo la colita uwu"
+        },
+        {
+            "command": "n!bailar",
+            "description": "Envia un gif bailando"
+        },
+        {
+            "command": "n!suicide",
+            "description": "Envia un gif suicida "
+        },
+        {
+            "command": "n!awoo",
+            "description": "AWOOOOOOOO"
+        },
+        {
+            "command": "n!actitud",
+            "description": "Solo usar los viernes "
+        },
+        {
+            "command": "n!jueves",
+            "description": "Solo usar los jueves"
+        },
+        {
+            "command": "n!godzilla",
+            "description": "Un gif random de GODzilla"
+        },
+        {
+            "command": "n!culear <i> [usuario] </i>",
+            "description": "Menciona a un usuario para el sin respeto "
+        },
+        {
+            "command": "n!putear <i> [usuario] </i>",
+            "description": "Menciona a un usuario para darle una buena putiza "
+        },
+        {
+            "command": "n!nalguear <i> [usuario] </i>",
+            "description": "Menciona a un usuario para nalguearle "
+        },
+        {
+            "command": "n!funar <i> [usuario] </i>",
+            "description": "Menciona a un usuario para funarle "
+        },
+        {
+            "command": "n!cepillar <i> [usuario] </i>",
+            "description": "Menciona a un usuario para cepillarle "
+        },
+        {
+            "command": "n!lavar <i> [usuario] </i>",
+            "description": "Menciona a un usuario para lavarle las manos "
+        },
+        {
+            "command": "n!morder <i> [usuario] </i>",
+            "description": "Menciona a un usuario para morderle "
+        },
+        {
+            "command": "n!wachar <i> [usuario] </i>",
+            "description": "Menciona a un usuario para mirarle "
+        },
+        {
+            "command": "n!buitrear <i> [usuario] </i>",
+            "description": "Menciona a un usuario para ponerte de buitre "
+        },
+        {
+            "command": "n!apresiar <i> [usuario] </i>",
+            "description": "Menciona a un usuario para apresiarle "
+        },
+        {
+            "command": "n!secuestrar <i> [usuario] </i>",
+            "description": "Menciona a un usuario para secuestrarle "
+        },
+        {
+            "command": "n!f <i> {texto} </i>",
+            "description": "Presiona F para dar tus respetos "
+        },
+        {
+            "command": "n!pat <i> [persona] </i>",
+            "description": "Menciona a un usuario para hacerle pat pat "
+        },
+        {
+            "command": "n!kiss <i> [persona] </i>",
+            "description": "Menciona a un usuario para darle un beso "
+        },
+        {
+            "command": "n!slap <i> [persona] </i>",
+            "description": "Menciona a un usuario para darle una buena cachetada "
+        },
+        {
+            "command": "n!hug <i> [persona",
+            "description": "Menciona a un usuario para abrazarlo "
+        },
+        {
+            "command": "n!poke <i> [persona] </i>",
+            "description": "Menciona a un usuario para darle un toque "
+        },
+        {
+            "command": "n!feed <i> [persona] </i>",
+            "description": "Menciona a un usuario para alimentarlo "
+        },
+        {
+            "command": "n!meaw <i> [persona] </i>",
+            "description": "Menciona a un usuario para maullarle "
+        },
+        {
+            "command": "n!tickle <i> [persona] </i>",
+            "description": "Menciona a un usuario para hacerle cosquillas "
+        },
+        {
+            "command": "n!lizzard <i> [persona] </i>",
+            "description": "Menciona a un usuario para darle una lagartija "
+        },
+        {
+            "command": "n!foxgirl <i> [persona] </i>",
+            "description": "Mencione a un usuario para enviarle una zorrita "
+        },
+        {
+            "command": "n!nekogif <i> [persona] </i>",
+            "description": "Mencione a un usuario para enviarle una neko"
         }
     ],
-    "nsfw4": [
+    "NSFW": [
         {
-            "command": "/video &lt;title&gt;",
-            "description": "Plays a video from your uncle's porn library"
+            "command": "n!sauce <Codigo de nhentai/hitomi.la>",
+            "description": "Añade un codigo nuclear y busca sobre las dos paginas (solo canales nsfw) "
         },
         {
-            "command": "/fuck &lt;person&gt;",
-            "description": "same as last nite with your mom"
+            "command": "n!r34 <busqueda>",
+            "description": "Añade una palabra para buscar en la r34 (solo canales nsfw)"
+        },
+        {
+            "command": "n!video <busqueda>",
+            "description": "Busca un video (solo en canales nsfw)"
+        },
+        {
+            "command": "n!eron",
+            "description": ""
+        },
+        {
+            "command": "n!holoero",
+            "description": ""
+        },
+        {
+            "command": "n!patas",
+            "description": ""
+        },
+        {
+            "command": "n!loli",
+            "description": ""
+        },
+        {
+            "command": "n!pussygif",
+            "description": ""
+        },
+        {
+            "command": "n!analart",
+            "description": ""
+        },
+        {
+            "command": "n!lewdnekogif",
+            "description": ""
+        },
+        {
+            "command": "n!pussyart",
+            "description": ""
+        },
+        {
+            "command": "n!pwankg",
+            "description": ""
+        },
+        {
+            "command": "n!eroyuri",
+            "description": ""
+        },
+        {
+            "command": "n!erokemo",
+            "description": ""
+        },
+        {
+            "command": "n!blowjob",
+            "description": ""
+        },
+        {
+            "command": "n!trap",
+            "description": ""
+        },
+        {
+            "command": "n!tits",
+            "description": ""
+        },
+        {
+            "command": "n!solo",
+            "description": ""
+        },
+        {
+            "command": "n!solog",
+            "description": ""
+        },
+        {
+            "command": "n!analart",
+            "description": ""
+        },
+        {
+            "command": "n!kuni",
+            "description": ""
+        },
+        {
+            "command": "n!random",
+            "description": ""
+        },
+        {
+            "command": "n!lewdkemo",
+            "description": ""
+        },
+        {
+            "command": "n!feet",
+            "description": ""
+        },
+        {
+            "command": "n!ero",
+            "description": ""
+        },
+        {
+            "command": "n!cumart",
+            "description": ""
+        },
+        {
+            "command": "n!cum",
+            "description": ""
+        },
+        {
+            "command": "n!classic",
+            "description": ""
+        },
+        {
+            "command": "n!pussy",
+            "description": ""
+        },
+        {
+            "command": "n!futanari",
+            "description": ""
+        },
+        {
+            "command": "n!boobs",
+            "description": ""
+        },
+        {
+            "command": "n!keta",
+            "description": ""
+        },
+        {
+            "command": "n!bj",
+            "description": ""
+        },
+        {
+            "command": "n!erok",
+            "description": ""
+        },
+        {
+            "command": "n!hololewd",
+            "description": ""
+        },
+        {
+            "command": "n!yuri",
+            "description": ""
+        },
+        {
+            "command": "n!feetgif",
+            "description": ""
+        },
+        {
+            "command": "n!lewdkemo",
+            "description": ""
+        },
+        {
+            "command": "n!lwd",
+            "description": ""
+        },
+        {
+            "command": "n!femdom",
+            "description": ""
+        },
+        {
+            "command": "n!hentai",
+            "description": ""
+        },
+        {
+            "command": "n!les",
+            "description": ""
         }
     ]
 }
